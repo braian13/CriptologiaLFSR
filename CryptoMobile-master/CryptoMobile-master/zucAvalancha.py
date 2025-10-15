@@ -57,7 +57,17 @@ porcentaje_a = (distancia_a / total_bits) * 100
 distancia_b = hamming_distance(original_ciphertext, ciphertext_b)
 porcentaje_b = (distancia_b / total_bits) * 100
 
-print("--- 🏔️ Resultados de la Prueba de Avalancha ---")
+# --- 6. Mostrar los resultados ---
+print(f"Mensaje Original: '{plaintext_message}'")
+print(f"Keystream Generado (hex): {keystream_a.hex()}\n")
+print("--- RESULTADO ---")
+print(f"Texto Cifrado (hex):\n{ciphertext_a.hex()}\n")
+
+print(f"Keystream Generado (hex): {keystream_b.hex()}\n")
+print("--- RESULTADO ---")
+print(f"Texto Cifrado (hex):\n{ciphertext_b.hex()}\n")
+
+print("--- Resultados de la Prueba de Avalancha ---")
 print(f"Longitud del texto cifrado: {len(original_ciphertext)} bytes ({total_bits} bits)")
 print("-" * 50)
 print("Prueba 1: Cambio de 1 bit en el Texto Plano")
