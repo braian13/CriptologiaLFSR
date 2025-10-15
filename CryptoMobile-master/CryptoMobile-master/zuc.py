@@ -70,6 +70,6 @@ print(f"  - Ciphertext Esperado:      {expected_ciphertext_hex}\n")
 
 # --- Verificación Final ---
 if calculated_ciphertext == expected_ciphertext:
-    print("✅ Validación exitosa: El texto cifrado calculado coincide con el valor esperado.")
+    print("Validación exitosa")
 else:
-    print("❌ Validación fallida: El texto cifrado no coincide con el esperado.")
+    print("Validación fallida")
